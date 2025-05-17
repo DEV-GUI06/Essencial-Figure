@@ -148,7 +148,7 @@ function abrirModal(id) {
     .querySelector("button");
   botao.innerHTML = `
     Comprar
-    <img src="https://cdn-user-icons.flaticon.com/146905/146905428/1747505773052.svg?token=exp=1747506671~hmac=fbde0f4cfc3767e9e246256c990072a5" 
+    <img src="assets/003-whatsapp.png" 
          alt="WhatsApp" style="width:18px; height:18px; margin-left:8px;">
   `;
 
