@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Essencial Figure</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/2-Photoroom.png" type="image/png" />
+  </head>
+  <body>
+    <!-- Modal do produto -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <div class="modal-esquerda">
+          <img id="imagem-principal" src="" alt="" />
+          <div class="modal-gallery" id="modal-gallery"></div>
+        </div>
+        <div class="modal-direita">
+          <h2 id="modal-title"></h2>
+          <p id="modal-desc"></p>
+          <a id="botao-comprar" target="_blank">
+            <button>Comprar</button>
+          </a>
+          <button onclick="fecharModal()">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="assets/2-Photoroom.png" alt="Logo Essencial Figure" />
+        </div>
+        <h1 class="titulo-loja">Essencial Figure</h1>
+        <nav class="nav-links">
+          <a href="index.html">Produtos</a>
+          <a href="sobre/index.html">Sobre nós</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+      <div class="banner-container">
+        <h2>Bem-vindo à <span>Essencial Figure!</span></h2>
+        <p>Encontre as melhores figuras de ação do mundo dos animes.</p>
+      </div>
+    </section>
+
+    <div class="barra-pesquisa-container">
+      <img
+        src="https://cdn-user-icons.flaticon.com/146905/146905428/1747503500459.svg?token=exp=1747504399~hmac=0e342f5977490ac00f221c60a7ba82a8"
+        alt="Lupa"
+      />
+      <input type="text" id="barra-pesquisa" placeholder="Buscar produtos..." />
+    </div>
+    <p
+      id="mensagem-erro"
+      style="
+        display: none;
+        text-align: center;
+        color: #890000;
+        font-weight: 600;
+        margin-top: 1rem;
+      "
+    >
+      Ops! Não temos este produto ainda.
+    </p>
+
+    <!-- Produtos -->
+    <main>
+      <div class="container" id="produtos">
+        <div class="produtos" id="lista-produtos">
+          <div class="card-produto">
+            <img
+              src="https://fujiokadistribuidor.vteximg.com.br/arquivos/ids/203588-150-150/p_55339_alta_1.png?v=637721741582200000"
+              alt="Naruto Uzumaki"
+              class="card-img"
+            />
+            <div class="card-info">
+              <h3 class="card-titulo">Naruto Uzumaki</h3>
+              <p class="card-descricao">
+                Figura detalhada de Naruto com base de chakra.
+              </p>
+              <p class="card-preco">R$ 129,90</p>
+              <button class="btn-vermais" onclick="abrirModal(1)">
+                Ver mais informações
+                <img
+                  src="https://cdn-user-icons.flaticon.com/146905/146905428/1747503206860.svg?token=exp=1747504105~hmac=1560ce4f1c396eecb67c93fdf5e3126d"
+                />
+              </button>
+            </div>
+          </div>
+
+          <div class="card-produto">
+            <img
+              src="https://fujiokadistribuidor.vteximg.com.br/arquivos/ids/191704-150-150/p_54400_alta_7.png?v=637589246888070000"
+              alt="Sasuke Uchiha"
+              class="card-img"
+            />
+            <div class="card-info">
+              <h3 class="card-titulo">Sasuke Uchiha</h3>
+              <p class="card-descricao">
+                Figura do Sasuke com espada e olhos Sharingan.
+              </p>
+              <p class="card-preco">R$ 139,90</p>
+              <button class="btn-vermais" onclick="abrirModal(2)">
+                Ver mais informações
+                <img
+                  src="https://cdn-user-icons.flaticon.com/146905/146905428/1747503206860.svg?token=exp=1747504105~hmac=1560ce4f1c396eecb67c93fdf5e3126d"
+                />
+              </button>
+            </div>
+          </div>
+
+          <div class="card-produto">
+            <img
+              src="https://fujiokadistribuidor.vteximg.com.br/arquivos/ids/191724-150-150/p_54409_alta_8.png?v=637589247165770000"
+              alt="Goku Super Saiyajin 3"
+              class="card-img"
+            />
+            <div class="card-info">
+              <h3 class="card-titulo">Goku Super Saiyajin 3</h3>
+              <p class="card-descricao">
+                Goku em sua forma Super Saiyajin 3 com energia brilhante.
+              </p>
+              <p class="card-preco">R$ 149,90</p>
+              <button class="btn-vermais" onclick="abrirModal(3)">
+                Ver mais informações
+                <img
+                  src="https://cdn-user-icons.flaticon.com/146905/146905428/1747503206860.svg?token=exp=1747504105~hmac=1560ce4f1c396eecb67c93fdf5e3126d"
+                />
+              </button>
+            </div>
+          </div>
+
+          <div class="card-produto">
+            <img
+              src="https://fujiokadistribuidor.vteximg.com.br/arquivos/ids/191673"
+              alt="Luffy"
+              class="card-img"
+            />
+            <div class="card-info">
+              <h3 class="card-titulo">Luffy</h3>
+              <p class="card-descricao">
+                Luffy com seu chapéu de palha e sorriso característico.
+              </p>
+              <p class="card-preco">R$ 119,90</p>
+              <button class="btn-vermais" onclick="abrirModal(4)">
+                Ver mais informações
+                <img
+                  src="https://cdn-user-icons.flaticon.com/146905/146905428/1747503206860.svg?token=exp=1747504105~hmac=1560ce4f1c396eecb67c93fdf5e3126d"
+                />
+              </button>
+            </div>
+          </div>
+
+          <div class="card-produto">
+            <img
+              src="https://a-static.mlcdn.com.br/800x560/action-figure-uchiha-itachi-akatsuki-anime-naruto-29-cm-boneco-estatueta-colecionavel/actionstore/itachicorvos/212e47ec540781cd9f63bae31e92dac1.jpeg"
+              alt="Itachi Uchiha"
+              class="card-img"
+            />
+            <div class="card-info">
+              <h3 class="card-titulo">Itachi Uchiha</h3>
+              <p class="card-descricao">
+                Figura do Itachi com capa da Akatsuki.
+              </p>
+              <p class="card-preco">R$ 159,90</p>
+              <button class="btn-vermais" onclick="abrirModal(5)">
+                Ver mais informações
+                <img
+                  src="https://cdn-user-icons.flaticon.com/146905/146905428/1747503206860.svg?token=exp=1747504105~hmac=1560ce4f1c396eecb67c93fdf5e3126d"
+                />
+              </button>
+            </div>
+          </div>
+
+          <div class="card-produto">
+            <img
+              src="https://fujiokadistribuidor.vteximg.com.br/arquivos/ids/241449"
+              alt="Vegeta Blue"
+              class="card-img"
+            />
+            <div class="card-info">
+              <h3 class="card-titulo">Vegeta Blue</h3>
+              <p class="card-descricao">
+                Vegeta em forma Blue com aura energética.
+              </p>
+              <p class="card-preco">R$ 139,90</p>
+              <button class="btn-vermais" onclick="abrirModal(6)">
+                Ver mais informações
+                <img
+                  src="https://cdn-user-icons.flaticon.com/146905/146905428/1747503206860.svg?token=exp=1747504105~hmac=1560ce4f1c396eecb67c93fdf5e3126d"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 Essencial Figure - Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
