@@ -1,8 +1,8 @@
 @font-face {
   font-family: "MinhaFonte";
-  src: url("/fonts/CreCooljazz M/Web Fonts/f67346c0f13b9d91cd040fa8044204aa.woff")
+  src: url("../fonts/CreCooljazz M/Web Fonts/f67346c0f13b9d91cd040fa8044204aa.woff")
       format("woff"),
-    url("/fonts/CreCooljazz M/Web Fonts/f67346c0f13b9d91cd040fa8044204aa.woff2")
+    url("../fonts/CreCooljazz M/Web Fonts/f67346c0f13b9d91cd040fa8044204aa.woff2")
       format("woff2");
 }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
