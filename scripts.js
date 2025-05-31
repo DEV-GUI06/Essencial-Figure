@@ -138,7 +138,7 @@ function abrirModal(id) {
 - Código: ${produto.codigo}
 - Preço: ${produto.preco}`;
 
-  const whatsapp = `https://wa.me/5511941096784?text=${encodeURIComponent(
+  const whatsapp = `https://wa.me/5511930236535?text=${encodeURIComponent(
     mensagem
   )}`;
   document.getElementById("botao-comprar").href = whatsapp;

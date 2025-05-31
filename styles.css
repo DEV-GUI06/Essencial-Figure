@@ -72,7 +72,7 @@ footer {
   text-decoration: none;
   font-size: 1rem;
   padding: 0.5rem 0.9rem;
-  border-radius: 8px;
+  border-radius: 30px;
   box-shadow: 0 2px 5px rgba(137, 0, 0, 0.4);
   transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
   user-select: none;
@@ -397,7 +397,7 @@ footer {
   user-select: none;
 }
 
-/* Responsive */
+/* Responsivo */
 @media (max-width: 768px) {
   .modal-content {
     flex-direction: column;
